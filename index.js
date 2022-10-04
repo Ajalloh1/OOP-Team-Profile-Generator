@@ -9,4 +9,29 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 ////variable Team Array for push//
-const teamArray = []; 
+const teamArray = [];
+//oop team creation peremeters//
+function runInquirer() {
+    inquirer.prompt([{
+        type: "list",
+        message: "What employee type would you want to add?",
+        options: ["Manager", "Engineer", "Intern"]
+    }])
+        .then(function (userData) {
+            switch (input.addEmployeePrompt) {
+                case "Manager";
+                    addManager();
+                    break;
+                case "Engineer";
+                    addEngineer();
+                    break;
+                case "Intern";
+                    addIntern();
+                    break;
+                default:
+                    htmlBuilder();
+
+
+            }
+        })
+}
