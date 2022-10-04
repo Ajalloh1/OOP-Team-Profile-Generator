@@ -30,8 +30,12 @@ function runInquirer() {
                     break;
                 default:
                     htmlBuilder();
-
-
             }
         })
+}
+///creating object arrays for the adding manager//
+function addManager() {
+    inquirer.prompt([
+
+    ])
 }
