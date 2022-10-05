@@ -6,7 +6,7 @@ function generateCard(teamArray) {
     const generateManager = function (manager) {
         return `
             <div class="card m-3" style="width: 18rem;">
-                <div class="card-body bg-primary text-light">
+                <div class="card-body bg-dark justify-content-center align-items-center">
                     <h4 class="card-title">${manager.getName()}</h4>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -22,7 +22,7 @@ function generateCard(teamArray) {
     const generateEngineer = function (engineer) {
         return `
             <div class="card m-3" style="width: 16rem;">
-                <div class="card-body bg-primary text-light">
+                <div class="card-body bg-dark justify-content-center align-items-center">
                     <h4 class="card-title">${engineer.getName()}</h4>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -35,11 +35,32 @@ function generateCard(teamArray) {
     };
 
     // create intern card//
+    const generateIntern = function (intern) {
+        return `
+            <div class="card m-3" style="width: 16rem;">
+                <div class="card-body bg-dark justify-content-center align-items-center">
+                    <h4 class="card-title">${intern.getName()}</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID: ${intern.getId()}</li>
+                    <li class="list-group-item">Email: <a href="#"> ${intern.getEmail()}</a></li>
+                    <li class="list-group-item">${intern.getSchool()}</li>
+                </ul>
+            </div>
+    `
+    };
 
+    cardArray.push(teamArray.filter(employee => employee.getRole() === "Manager")
+        .map(employee => generateManager(employee)).join("")
+    )
+    cardArray.push(teamArray.filter(employee => employee.getRole() === "Engineer")
+        .map(employee => generateEngineer(employee)).join("")
 
+    )
+    cardArray.push(teamArray.filter(employee => employee.getRole() === "Intern")
+        .map(employee => generateIntern(employee)).join("")
 
-
-
+    )
 
     return cardArray.join("")
 }
