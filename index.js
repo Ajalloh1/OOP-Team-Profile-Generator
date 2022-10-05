@@ -51,7 +51,47 @@ function addManager() {
             name: "Email",
             message: "Enter manager's Email"
         },
-
+        {
+            type: "input",
+            name: "officeNumber",
+            message: "Enter manager's officeNumber"
+        },
 
     ])
+        .then(answers => {
+            const manager = new Manager(answers.name, answers.Id, answer.Email, answer.officeNumber);
+            teamArray.push(manager);
+            fs.createReadStream();
+        });
+}
+///creating object arrays adding engineer//
+function addManager() {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
+            message: "Enter engineer's name"
+        },
+        {
+            type: "input",
+            name: "Id",
+            message: "Enter engineer's Id"
+        },
+        {
+            type: "input",
+            name: "Email",
+            message: "Enter engineer's Email"
+        },
+        {
+            type: "input",
+            name: "GitHub",
+            message: "Enter manager's GitHub user"
+        },
+
+    ])
+        .then(answers => {
+            const manager = new Manager(answers.name, answers.Id, answer.Email, answer.officeNumber);
+            teamArray.push(manager);
+            fs.createReadStream();
+        });
 }
