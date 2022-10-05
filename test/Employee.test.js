@@ -33,4 +33,16 @@ test("gets id via getId method", () => {
     const testId = 10;
     const employeeInstance = new Employee("Ahmadu", testId);
     expect(employeeInstance.getId).toBe(testId);
-})
+});
+
+test("gets email via getEmail method", () => {
+    const testEmail = "ahmadughj@jalloh.com";
+    const employeeInstance = new Employee("Ahmadu", 10, testEmail);
+    expect(employeeInstance.getEmail).toBe(testEmail);
+});
+
+test("gets role via getRole method", () => {
+    const testValue = "Employee";
+    const employeeInstance = new Employee("Ahmadu", 10, "ahmadughj@jalloh.com", Employee);
+    expect(employeeInstance.getRole).toBe(testValue);
+});
