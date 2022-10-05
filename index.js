@@ -90,8 +90,8 @@ function addManager() {
 
     ])
         .then(answers => {
-            const manager = new Manager(answers.name, answers.Id, answer.Email, answer.officeNumber);
-            teamArray.push(manager);
+            const engineer = new engineer(answers.name, answers.Id, answer.Email, answer.GitHub);
+            teamArray.push(engineer);
             fs.createReadStream();
         });
 }
