@@ -65,7 +65,7 @@ function addManager() {
         });
 }
 ///creating object arrays adding engineer//
-function addManager() {
+function addEngineer() {
     inquirer.prompt([
         {
             type: "input",
@@ -92,6 +92,37 @@ function addManager() {
         .then(answers => {
             const engineer = new engineer(answers.name, answers.Id, answer.Email, answer.GitHub);
             teamArray.push(engineer);
+            fs.createReadStream();
+        });
+}
+///creating object arrays adding intern//
+function addIntern() {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
+            message: "Enter intern's name"
+        },
+        {
+            type: "input",
+            name: "Id",
+            message: "Enter intern's Id"
+        },
+        {
+            type: "input",
+            name: "Email",
+            message: "Enter intern's Email"
+        },
+        {
+            type: "input",
+            name: "School",
+            message: "Enter School"
+        },
+
+    ])
+        .then(answers => {
+            const intern = new Intern(answers.name, answers.Id, answer.Email, answer.school);
+            teamArray.push(intern);
             fs.createReadStream();
         });
 }
