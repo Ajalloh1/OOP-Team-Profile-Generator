@@ -29,7 +29,7 @@ function runInquirer() {
                     addIntern();
                     break;
                 default:
-                    htmlBuilder();
+                    htmlGenerator();
             }
         })
 }
@@ -125,4 +125,17 @@ function addIntern() {
             teamArray.push(intern);
             fs.createReadStream();
         });
+}
+function htmlGenerator() {
+    fs.writeFile("./dist/index.html", data, err => {
+        if (err) {
+            console.log(err);
+            return
+        }
+        else {
+            console.log("Team Successfully Created")
+        }
+    })
+
+
 }
