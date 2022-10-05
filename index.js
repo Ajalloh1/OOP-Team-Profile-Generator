@@ -33,9 +33,25 @@ function runInquirer() {
             }
         })
 }
-///creating object arrays for the adding manager//
+///creating object arrays adding manager//
 function addManager() {
     inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
+            message: "Enter manager;s name"
+        },
+        {
+            type: "input",
+            name: "Id",
+            message: "Enter manager's Id"
+        },
+        {
+            type: "input",
+            name: "Email",
+            message: "Enter manager's Email"
+        },
+
 
     ])
 }
