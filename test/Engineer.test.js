@@ -1,5 +1,5 @@
 ///Linking ngineer to test, requiring engineer file///
-const Engineer = require('../rsc/Engineer');
+const Engineer = require('../lib/Engineer');
 
 test("sets GitHub via constructor", () => {
     const testValue = "GitHub";
