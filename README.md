@@ -27,4 +27,4 @@ Contributions are welcome, please contact the author via github or email below. 
 
 
 ## videoDemo:https://drive.google.com/file/d/1DLeiXPLg-ZVk9Tzi8zsfbuSNxaOo9RXt/view
-## git repo https://github.com/Ajalloh1/OOP-Team-Profile-Generator
+## git repo https://ajalloh1.github.io/OOP-Team-Profile-Generator/
