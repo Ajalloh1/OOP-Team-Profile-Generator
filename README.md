@@ -11,8 +11,6 @@
 ![Image1](./assets/img.png)
 
 ![Image2](./assets/img2.png)
-
-![Image3](./assets/img3.png)
 # Description
 This is a team profile generator. The application provides questions prompts to be answered by the user. 
 All the user needs to do is to answer the questions and a professional team profile generator is generated for them in a node js environment.
@@ -28,5 +26,5 @@ Your file will be generated.
 Contributions are welcome, please contact the author via github or email below. Thank you
 
 
-## videoDemo:
+## videoDemo:https://drive.google.com/file/d/1DLeiXPLg-ZVk9Tzi8zsfbuSNxaOo9RXt/view
 ## git repo https://github.com/Ajalloh1/OOP-Team-Profile-Generator
