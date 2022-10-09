@@ -8,8 +8,7 @@
 5. [Contributing](#contributing)
 6. [Tests](#tests)
 
-![Image1](./assets/img.png)
-
+![Image1](./assets/img1.png)
 ![Image2](./assets/img2.png)
 # Description
 This is a team profile generator. The application provides questions prompts to be answered by the user. 
