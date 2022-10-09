@@ -1,5 +1,5 @@
 ///Linking manager to test, requiring mnager file///
-const Engineer = require('../lib/Manager');
+const Manager = require('../lib/Manager');
 
 test("set office number", () => {
     const testValue = "20";

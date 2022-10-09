@@ -1,5 +1,6 @@
 ///Linking intern to test, requiring intern file///
-const Engineer = require('../lib/Intern');
+const Intern = require('../lib/Intern');
+console.log(Intern);
 
 test("create school via constructor", () => {
     const testValue = "ESU";
@@ -15,6 +16,6 @@ test("create intern object", () => {
 
 test("getRole", () => {
     const testValue = "Intern";
-    const employeeInstance = new Engineer("Ahmadu Jalloh", 10, "ahmadughj@jalloh.com", testValue, "Intern");
+    const employeeInstance = new Intern("Ahmadu Jalloh", 10, "ahmadughj@jalloh.com", testValue, "Intern");
     expect(employeeInstance.getRole).toBe(testValue);
 });
